@@ -1,0 +1,157 @@
+nav {
+  display: flex;
+  max-height: 120px;
+}
+
+nav .container {
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+}
+/*bagian menu*/
+.menu-versi-mobile {
+  display: none;
+}
+.menu {
+  margin-top: 25px;
+  margin-left: 37%;
+  width: 49%;
+  height: 70px;
+}
+nav ul {
+  height: 20px;
+  margin: 25px 0;
+  display: flex;
+}
+nav ul li {
+  font-size: 14px;
+  list-style: none;
+  margin-left: 17px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #4d4d52;
+}
+nav ul li a:hover {
+  color: #000000;
+}
+nav .active {
+  color: #000000;
+}
+.menu button {
+  height: 30px;
+  width: 100px;
+  margin-top: -5px;
+  border-radius: 6px;
+  color: white;
+  background: rgb(0, 204, 255);
+}
+.menu button:hover {
+  background: rgb(11, 80, 136);
+}
+/*bagian logo*/
+.logo {
+  margin-top: 20px;
+  width: 12%;
+}
+.logo img {
+  width: 70px;
+}
+/*humberger menu*/
+.menu-toggle {
+  background: rgb(97, 92, 92);
+  display: none;
+  width: 50px;
+  flex-direction: column;
+  position: relative;
+  height: 50px;
+  margin: 20px 73%;
+}
+.menu-toggle:hover {
+  background: black;
+}
+.menu-toggle input {
+  height: 50px;
+  width: 50px;
+  margin: 0 3%;
+  opacity: 0;
+  position: absolute;
+}
+.menu-toggle span {
+  background: rgb(255, 242, 242);
+  display: block;
+  width: 37px;
+  height: 5px;
+  border-radius: 4px;
+  margin: 5.5px;
+  justify-content: space-evenly;
+}
+@media screen and (max-width: 600px) {
+  nav {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: rgb(92, 90, 90);
+  }
+  .logo {
+    margin-top: 10px;
+  }
+  .menu-toggle {
+    display: flex;
+  }
+  .menu {
+    display: none;
+    margin-left: 0;
+  }
+  .menu-versi-mobile {
+    width: 100%;
+    height: 240px;
+    display: none;
+    transition: all 2s;
+    background: rgb(54, 54, 54);
+  }
+  .menu-versi-mobile ul {
+    margin: 0 auto;
+    display: block;
+    width: 50%;
+    height: 100%;
+  }
+  ul {
+    margin: 20px;
+  }
+  .menu-versi-mobile ul li {
+    list-style: none;
+    width: 55px;
+    margin: 19px auto;
+    text-align: center;
+  }
+  ul .top {
+    margin: 10px;
+  }
+  .button {
+    width: 60%;
+    margin: 20px auto;
+  }
+
+  .menu-versi-mobile ul li a {
+    text-decoration: none;
+
+    color: rgb(168, 167, 167);
+  }
+  .menu-versi-mobile ul li a:hover {
+    color: white;
+  }
+  .menu-versi-mobile button {
+    margin: 0 15px;
+    height: 30px;
+    width: 80%;
+    border-radius: 6px;
+    color: white;
+    background: rgb(0, 204, 255);
+  }
+  .menu-versi-mobile .active {
+    color: white;
+  }
+  .menu-versi-mobile button:hover {
+    background: rgb(11, 80, 136);
+  }
+}
